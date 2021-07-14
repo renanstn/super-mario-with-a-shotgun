@@ -1,10 +1,13 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Sprites/Mario/mario_test.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/Mario.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 8, 16 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 32, 10 )
 
 [node name="Mario" type="KinematicBody2D"]
 script = ExtResource( 2 )
@@ -19,3 +22,10 @@ shape = SubResource( 1 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
+zoom = Vector2( 0.4, 0.4 )
+
+[node name="ShotgunArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ShotgunArea"]
+position = Vector2( 40, 0 )
+shape = SubResource( 2 )

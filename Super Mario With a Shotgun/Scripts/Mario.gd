@@ -11,9 +11,7 @@ var motion: Vector2 = Vector2()
 onready var sprite : Sprite = $Sprite
 #onready var animator : AnimationPlayer = $AnimationPlayer
 
-# Signal utilizado pelo script Camera2D para ajuste da câmera
 signal player_flipped(direction)
-
 
 func _physics_process(delta):
 	motion.y += GRAVITY

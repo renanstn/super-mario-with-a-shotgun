@@ -29,9 +29,10 @@ __meta__ = {
 }
 
 [node name="Mario" parent="." instance=ExtResource( 3 )]
-position = Vector2( -2536, 152 )
+position = Vector2( -2440, 152 )
 
 [node name="Koopa" parent="." instance=ExtResource( 4 )]
+visible = false
 position = Vector2( -2240, 104 )
 
 [node name="InvisiblePlatforms" type="Node" parent="."]

@@ -7,6 +7,8 @@ const JUMP: int = 350
 
 onready var sprite : Sprite = $Sprite
 onready var animator : AnimationPlayer = $AnimationPlayer
+onready var audio_player : AudioStreamPlayer = $AudioStreamPlayer
+onready var shotgun_range : Area2D = $ShotgunArea
 
 export var speed: int = 150
 var motion: Vector2 = Vector2()
@@ -15,8 +17,10 @@ var looking_to_right: bool = false
 signal player_flipped(direction)
 
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	motion.y += GRAVITY
+	if Input.is_action_just_pressed("shoot"):
+		shoot()
 	motion = move_and_slide(fromInputsToMotion(), UP)
 	animate()
 
@@ -30,6 +34,7 @@ func fromInputsToMotion() -> Vector2:
 		motion.x = 0
 	if is_on_floor() and Input.is_action_just_pressed("jump"):
 		motion.y = -JUMP
+		audio_player.play()
 	return motion
 
 
@@ -48,3 +53,11 @@ func animate() -> void:
 		looking_to_right = false
 		scale.x = -1
 		emit_signal("player_flipped", "left")
+
+
+func shoot():
+	print("pew")
+	var targets = shotgun_range.get_overlapping_bodies()
+	for target in targets:
+		if "enemy" in target.get_groups():
+			target.die()

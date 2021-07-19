@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/koopa.png-a6a1115db472b3a19209bc9420c95b79.stex"
+path="res://.import/koopa_idle.png-2c4a222763bfd1ab23d128d0b7991183.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Koopa/koopa.png"
-dest_files=[ "res://.import/koopa.png-a6a1115db472b3a19209bc9420c95b79.stex" ]
+source_file="res://Sprites/Koopa/koopa_idle.png"
+dest_files=[ "res://.import/koopa_idle.png-2c4a222763bfd1ab23d128d0b7991183.stex" ]
 
 [params]
 

@@ -8,25 +8,15 @@
 
 config_version=4
 
-_global_script_classes=[ {
-"base": "Sprite",
-"class": "paint",
-"language": "GDScript",
-"path": "res://Scripts/BloodSurface.gd"
-} ]
-_global_script_class_icons={
-"paint": ""
-}
-
 [application]
 
 config/name="Super Mario With a Shotgun"
 run/main_scene="res://Scenes/Level_1.tscn"
 config/icon="res://icon.png"
 
-[autoload]
+[global]
 
-BloodSurface="*res://Scenes/BloodSurface.tscn"
+particl=false
 
 [input]
 

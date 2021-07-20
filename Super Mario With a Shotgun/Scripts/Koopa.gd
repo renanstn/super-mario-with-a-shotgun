@@ -9,19 +9,25 @@ enum STATES {
 	DYING,
 }
 
-onready var animator : AnimationPlayer = $AnimationPlayer
+onready var animator = $AnimationPlayer
+onready var sprite = $Sprite
+onready var collision = $CollisionShape2D
 
 export var player_path : NodePath
+export var blood_emitter_path : NodePath
 export var min_distance_from_player: int = 100
 export var speed : int = 40
+
 var motion: Vector2 = Vector2(0, 0)
 var player : Node
+var blood_emitter : Node
 var state = STATES.IDLE
 var looking_to_right = false
 
 
 func _ready():
 	player = get_node(player_path)
+	blood_emitter = get_node(blood_emitter_path)
 
 
 func _physics_process(_delta):
@@ -58,5 +64,15 @@ func animate():
 
 
 func die():
-	print("DIE")
-	pass
+	state = STATES.DYING
+	if blood_emitter:
+		sprite.visible = false
+		collision.disabled = true
+		blood_emitter.emit()
+	else:
+		queue_free()
+
+
+func _on_BloodEffect_blood_over():
+	print("Free")
+	queue_free()

@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Sprites/Mario/mario_idle.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/Mario.gd" type="Script" id=2]
@@ -6,6 +6,8 @@
 [ext_resource path="res://Sprites/Mario/mario_reloading.png" type="Texture" id=4]
 [ext_resource path="res://Sprites/Mario/mario_jumping.png" type="Texture" id=5]
 [ext_resource path="res://Audios/jump.wav" type="AudioStream" id=6]
+[ext_resource path="res://Sprites/shoot.png" type="Texture" id=7]
+[ext_resource path="res://Scenes/GunEjector.tscn" type="PackedScene" id=8]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 8, 16 )
@@ -95,7 +97,6 @@ tracks/2/keys = {
 
 [sub_resource type="Animation" id=5]
 length = 0.4
-loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
 tracks/0/interp = 1
@@ -133,7 +134,7 @@ tracks/2/keys = {
 "values": [ 4 ]
 }
 
-[sub_resource type="Animation" id=6]
+[sub_resource type="Animation" id=7]
 length = 0.3
 loop = true
 tracks/0/type = "value"
@@ -173,14 +174,39 @@ tracks/2/keys = {
 "values": [ 3 ]
 }
 
+[sub_resource type="Animation" id=6]
+resource_name = "Shoot"
+length = 0.1
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("ShootSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.05 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 0, 1 ]
+}
+
 [node name="Mario" type="KinematicBody2D"]
 script = ExtResource( 2 )
+gun_eject_path = NodePath("GunEjector")
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( -8, 0 )
 texture = ExtResource( 1 )
 offset = Vector2( 0, 1 )
 region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="ShootSprite" type="Sprite" parent="."]
+visible = false
+position = Vector2( -37.5602, -0.563629 )
+texture = ExtResource( 7 )
+flip_h = true
+hframes = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -3, 0 )
@@ -202,7 +228,15 @@ shape = SubResource( 2 )
 anims/Idle = SubResource( 3 )
 anims/Jumping = SubResource( 4 )
 anims/Reload = SubResource( 5 )
-anims/Walking = SubResource( 6 )
+anims/Walking = SubResource( 7 )
+
+[node name="AnimationPlayerShoot" type="AnimationPlayer" parent="."]
+anims/Shoot = SubResource( 6 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 6 )
+
+[node name="GunEjector" parent="." instance=ExtResource( 8 )]
+position = Vector2( -9.55673, -0.707905 )
+
+[connection signal="animation_finished" from="AnimationPlayerShoot" to="." method="_on_AnimationPlayerShoot_animation_finished"]

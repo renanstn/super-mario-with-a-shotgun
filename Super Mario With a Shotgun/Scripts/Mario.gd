@@ -5,16 +5,23 @@ const UP: Vector2 = Vector2(0, -1)
 const GRAVITY: int = 15
 const JUMP: int = 350
 
-onready var sprite : Sprite = $Sprite
-onready var animator : AnimationPlayer = $AnimationPlayer
-onready var audio_player : AudioStreamPlayer = $AudioStreamPlayer
-onready var shotgun_range : Area2D = $ShotgunArea
+onready var sprite = $Sprite
+onready var shoot_sprite = $ShootSprite
+onready var animator = $AnimationPlayer
+onready var animator_shoot = $AnimationPlayerShoot
+onready var audio_player = $AudioStreamPlayer
+onready var shotgun_range = $ShotgunArea
 
+export var gun_eject_path: NodePath
 export var speed: int = 150
 var motion: Vector2 = Vector2()
+var gun_ejector: Node
 var looking_to_right: bool = false
 
 signal player_flipped(direction)
+
+func _ready():
+	gun_ejector = get_node(gun_eject_path)
 
 
 func _physics_process(_delta):
@@ -56,8 +63,15 @@ func animate() -> void:
 
 
 func shoot():
-	print("pew")
+	shoot_sprite.visible = true
+	animator_shoot.play("Shoot")
+	gun_ejector.eject()
 	var targets = shotgun_range.get_overlapping_bodies()
 	for target in targets:
 		if "enemy" in target.get_groups():
 			target.die()
+
+
+func _on_AnimationPlayerShoot_animation_finished(anim_name):
+	if anim_name == "Shoot":
+		shoot_sprite.visible = false

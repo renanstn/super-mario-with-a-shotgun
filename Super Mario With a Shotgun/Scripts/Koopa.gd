@@ -74,5 +74,4 @@ func die():
 
 
 func _on_BloodEffect_blood_over():
-	print("Free")
 	queue_free()

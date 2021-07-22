@@ -13,5 +13,6 @@ one_shot = true
 local_coords = false
 direction = Vector2( 0.5, -1 )
 spread = 10.0
+gravity = Vector2( 0, 200 )
 initial_velocity = 150.0
 initial_velocity_random = 0.8

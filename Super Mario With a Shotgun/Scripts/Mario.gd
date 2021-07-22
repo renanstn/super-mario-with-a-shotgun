@@ -11,12 +11,14 @@ onready var animator = $AnimationPlayer
 onready var animator_shoot = $AnimationPlayerShoot
 onready var audio_player = $AudioStreamPlayer
 onready var shotgun_range = $ShotgunArea
+onready var reload_timer = $ReloadingTimer
 
 export var gun_eject_path: NodePath
 export var speed: int = 150
 var motion: Vector2 = Vector2()
 var gun_ejector: Node
 var looking_to_right: bool = false
+var reloading: bool = false
 
 signal player_flipped(direction)
 
@@ -42,6 +44,8 @@ func fromInputsToMotion() -> Vector2:
 	if is_on_floor() and Input.is_action_just_pressed("jump"):
 		motion.y = -JUMP
 		audio_player.play()
+	if is_on_floor() and Input.is_action_just_pressed("reload") and not reloading:
+		reload()
 	return motion
 
 
@@ -49,7 +53,8 @@ func animate() -> void:
 	if motion.x != 0:
 		animator.play("Walking")
 	else:
-		animator.play("Idle")
+		if not reloading:
+			animator.play("Idle")
 	if !is_on_floor():
 		animator.play("Jumping")
 	if motion.x > 0 and not looking_to_right:
@@ -65,13 +70,23 @@ func animate() -> void:
 func shoot():
 	shoot_sprite.visible = true
 	animator_shoot.play("Shoot")
-	gun_ejector.eject()
 	var targets = shotgun_range.get_overlapping_bodies()
 	for target in targets:
 		if "enemy" in target.get_groups():
 			target.die()
 
 
+func reload():
+	reload_timer.start()
+	reloading = true
+	gun_ejector.eject()
+	animator.play("Reload")
+
+
 func _on_AnimationPlayerShoot_animation_finished(anim_name):
 	if anim_name == "Shoot":
 		shoot_sprite.visible = false
+
+
+func _on_ReloadingTimer_timeout():
+	reloading = false

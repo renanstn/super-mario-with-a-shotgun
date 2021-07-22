@@ -190,6 +190,27 @@ position = Vector2( -1768, 176 )
 [node name="Platform67" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1752, 176 )
 
+[node name="Platform107" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -1848, 112 )
+
+[node name="Platform108" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -1832, 112 )
+
+[node name="Platform109" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -1816, 112 )
+
+[node name="Platform110" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -1800, 112 )
+
+[node name="Platform111" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -1784, 112 )
+
+[node name="Platform112" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -1768, 112 )
+
+[node name="Platform113" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -1752, 112 )
+
 [node name="Platform68" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1736, 176 )
 

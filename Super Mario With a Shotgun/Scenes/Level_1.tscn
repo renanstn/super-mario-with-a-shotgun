@@ -30,46 +30,6 @@ __meta__ = {
 [node name="Mario" parent="." instance=ExtResource( 3 )]
 position = Vector2( -2440, 152 )
 
-[node name="Koopa" parent="." instance=ExtResource( 4 )]
-position = Vector2( -2120, 104 )
-player_path = NodePath("../Mario")
-min_distance_from_player = 125
-
-[node name="Koopa2" parent="." instance=ExtResource( 4 )]
-position = Vector2( -2104, 104 )
-player_path = NodePath("../Mario")
-min_distance_from_player = 125
-
-[node name="Koopa3" parent="." instance=ExtResource( 4 )]
-position = Vector2( -2088, 104 )
-player_path = NodePath("../Mario")
-min_distance_from_player = 125
-
-[node name="Koopa4" parent="." instance=ExtResource( 4 )]
-position = Vector2( -2072, 104 )
-player_path = NodePath("../Mario")
-min_distance_from_player = 125
-
-[node name="Koopa5" parent="." instance=ExtResource( 4 )]
-position = Vector2( -2056, 104 )
-player_path = NodePath("../Mario")
-min_distance_from_player = 125
-
-[node name="Koopa6" parent="." instance=ExtResource( 4 )]
-position = Vector2( -2040, 104 )
-player_path = NodePath("../Mario")
-min_distance_from_player = 125
-
-[node name="Koopa7" parent="." instance=ExtResource( 4 )]
-position = Vector2( -2024, 104 )
-player_path = NodePath("../Mario")
-min_distance_from_player = 125
-
-[node name="Koopa8" parent="." instance=ExtResource( 4 )]
-position = Vector2( -2008, 104 )
-player_path = NodePath("../Mario")
-min_distance_from_player = 125
-
 [node name="Platforms" type="Node" parent="."]
 
 [node name="Platform" parent="Platforms" instance=ExtResource( 5 )]
@@ -640,3 +600,45 @@ collision_mask = 3
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="HUD" parent="CanvasLayer" instance=ExtResource( 6 )]
+
+[node name="Enemyes" type="Node" parent="."]
+
+[node name="Koopa" parent="Enemyes" instance=ExtResource( 4 )]
+position = Vector2( -2120, 104 )
+player_path = NodePath("../../Mario")
+min_distance_from_player = 125
+
+[node name="Koopa2" parent="Enemyes" instance=ExtResource( 4 )]
+position = Vector2( -2104, 104 )
+player_path = NodePath("../../Mario")
+min_distance_from_player = 125
+
+[node name="Koopa3" parent="Enemyes" instance=ExtResource( 4 )]
+position = Vector2( -2088, 104 )
+player_path = NodePath("../../Mario")
+min_distance_from_player = 125
+
+[node name="Koopa4" parent="Enemyes" instance=ExtResource( 4 )]
+position = Vector2( -2072, 104 )
+player_path = NodePath("../../Mario")
+min_distance_from_player = 125
+
+[node name="Koopa5" parent="Enemyes" instance=ExtResource( 4 )]
+position = Vector2( -2056, 104 )
+player_path = NodePath("../../Mario")
+min_distance_from_player = 125
+
+[node name="Koopa6" parent="Enemyes" instance=ExtResource( 4 )]
+position = Vector2( -2040, 104 )
+player_path = NodePath("../../Mario")
+min_distance_from_player = 125
+
+[node name="Koopa7" parent="Enemyes" instance=ExtResource( 4 )]
+position = Vector2( -2024, 104 )
+player_path = NodePath("../../Mario")
+min_distance_from_player = 125
+
+[node name="Koopa8" parent="Enemyes" instance=ExtResource( 4 )]
+position = Vector2( -2008, 104 )
+player_path = NodePath("../../Mario")
+min_distance_from_player = 125

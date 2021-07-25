@@ -21,6 +21,7 @@ var motion: Vector2 = Vector2()
 var gun_ejector: Node
 var looking_to_right: bool = false
 var reloading: bool = false
+var bullets : int = 1
 
 signal player_flipped(direction)
 
@@ -70,13 +71,15 @@ func animate() -> void:
 
 
 func shoot():
-	shoot_sprite.visible = true
-	animator_shoot.play("Shoot")
-	audio_player_shoot.play()
-	var targets = shotgun_range.get_overlapping_bodies()
-	for target in targets:
-		if "enemy" in target.get_groups():
-			target.die()
+	if bullets > 0:
+		bullets -= 1
+		shoot_sprite.visible = true
+		animator_shoot.play("Shoot")
+		audio_player_shoot.play()
+		var targets = shotgun_range.get_overlapping_bodies()
+		for target in targets:
+			if "enemy" in target.get_groups():
+				target.die()
 
 
 func reload():
@@ -85,6 +88,8 @@ func reload():
 	reloading = true
 	gun_ejector.eject()
 	animator.play("Reload")
+	if bullets < 1:
+		bullets += 1
 
 
 func _on_AnimationPlayerShoot_animation_finished(anim_name):

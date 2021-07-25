@@ -2,4 +2,4 @@
 
 Hell yeah!
 
-![print](screenshots/print.png)
+![print](screenshots/kill them.gif)

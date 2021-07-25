@@ -9,7 +9,9 @@ onready var sprite = $Sprite
 onready var shoot_sprite = $ShootSprite
 onready var animator = $AnimationPlayer
 onready var animator_shoot = $AnimationPlayerShoot
-onready var audio_player = $AudioStreamPlayer
+onready var audio_player_jump = $AudioStreamPlayerJump
+onready var audio_player_shoot = $AudioStreamPlayerShoot
+onready var audio_player_reload = $AudioStreamReload
 onready var shotgun_range = $ShotgunArea
 onready var reload_timer = $ReloadingTimer
 
@@ -43,7 +45,7 @@ func fromInputsToMotion() -> Vector2:
 		motion.x = 0
 	if is_on_floor() and Input.is_action_just_pressed("jump"):
 		motion.y = -JUMP
-		audio_player.play()
+		audio_player_jump.play()
 	if is_on_floor() and Input.is_action_just_pressed("reload") and not reloading:
 		reload()
 	return motion
@@ -70,6 +72,7 @@ func animate() -> void:
 func shoot():
 	shoot_sprite.visible = true
 	animator_shoot.play("Shoot")
+	audio_player_shoot.play()
 	var targets = shotgun_range.get_overlapping_bodies()
 	for target in targets:
 		if "enemy" in target.get_groups():
@@ -78,6 +81,7 @@ func shoot():
 
 func reload():
 	reload_timer.start()
+	audio_player_reload.play()
 	reloading = true
 	gun_ejector.eject()
 	animator.play("Reload")

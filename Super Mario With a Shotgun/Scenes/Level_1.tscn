@@ -39,342 +39,568 @@ min_distance_from_player = 125
 
 [node name="Platform" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2552, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform2" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2536, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform3" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2520, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform4" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2504, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform5" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2488, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform6" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2472, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform7" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2456, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform8" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2440, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform9" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2424, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform10" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2408, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform11" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2392, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform12" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2376, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform13" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2360, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform14" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2344, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform15" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2328, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform16" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2312, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform17" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2296, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform18" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2280, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform19" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2264, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform20" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2248, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform21" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2232, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform22" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2216, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform23" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2200, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform24" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2184, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform41" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2168, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform42" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2152, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform43" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2136, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform44" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2120, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform45" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2104, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform46" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2088, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform47" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2072, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform48" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2056, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform49" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2040, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform50" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2024, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform51" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2008, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform52" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1992, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform53" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1976, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform54" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1960, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform55" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1944, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform56" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1928, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform57" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1912, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform58" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1896, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform59" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1880, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform60" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1864, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform61" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1848, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform62" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1832, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform63" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1816, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform64" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1800, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform65" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1784, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform66" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1768, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform67" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1752, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform107" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1848, 112 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform108" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1832, 112 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform109" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1816, 112 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform110" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1800, 112 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform111" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1784, 112 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform112" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1768, 112 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform113" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1752, 112 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform68" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1736, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform69" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1720, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform70" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1704, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform71" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1688, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform72" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1672, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform73" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1656, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform74" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1640, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform75" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1624, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform76" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1608, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform77" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1592, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform78" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1576, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform79" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1560, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform80" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1544, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform81" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1528, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform82" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1512, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform83" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1496, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform84" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1480, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform85" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1464, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform86" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1448, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform87" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1432, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform88" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1416, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform89" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1400, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform90" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1384, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform91" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1368, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform92" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1352, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform93" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1336, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform94" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1320, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform95" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1304, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform96" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1288, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform97" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1272, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform98" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1256, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform99" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1240, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform100" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1224, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform101" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1208, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform102" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1192, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform103" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1176, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform104" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1160, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform105" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1144, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform106" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -1128, 176 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform25" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2248, 128 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform26" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2232, 128 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform27" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2216, 128 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform28" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2200, 128 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform29" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2184, 128 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform30" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2168, 128 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform31" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2152, 128 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform32" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2136, 128 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform33" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2120, 128 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform34" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2104, 128 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform35" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2088, 128 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform36" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2072, 128 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform37" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2056, 128 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform38" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2040, 128 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform39" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2024, 128 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="Platform40" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2008, 128 )
+collision_layer = 3
+collision_mask = 3
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

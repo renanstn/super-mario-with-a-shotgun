@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://Sprites/Mario/mario_idle.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/Mario.gd" type="Script" id=2]
@@ -8,6 +8,9 @@
 [ext_resource path="res://Audios/jump.wav" type="AudioStream" id=6]
 [ext_resource path="res://Sprites/shoot.png" type="Texture" id=7]
 [ext_resource path="res://Scenes/GunEjector.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Audios/bullet.wav" type="AudioStream" id=9]
+[ext_resource path="res://Scenes/Cartridge.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Audios/swooper.wav" type="AudioStream" id=11]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 8, 16 )
@@ -233,14 +236,21 @@ anims/Walking = SubResource( 6 )
 [node name="AnimationPlayerShoot" type="AnimationPlayer" parent="."]
 anims/Shoot = SubResource( 7 )
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="AudioStreamPlayerShoot" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+
+[node name="AudioStreamReload" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
+
+[node name="AudioStreamPlayerJump" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 6 )
 
 [node name="GunEjector" parent="." instance=ExtResource( 8 )]
 position = Vector2( -9.55673, -0.707905 )
+cartridge_scene = ExtResource( 10 )
+player_node_path = NodePath("..")
 
 [node name="ReloadingTimer" type="Timer" parent="."]
-wait_time = 0.4
 one_shot = true
 
 [connection signal="animation_finished" from="AnimationPlayerShoot" to="." method="_on_AnimationPlayerShoot_animation_finished"]

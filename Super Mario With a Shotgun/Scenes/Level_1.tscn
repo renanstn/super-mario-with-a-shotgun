@@ -1,12 +1,13 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Sprites/Backgrounds/green.png" type="Texture" id=1]
 [ext_resource path="res://Sprites/Level_1/level_1.png" type="Texture" id=2]
 [ext_resource path="res://Scenes/Mario.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scenes/Koopa.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Scenes/Platform.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/OneWayPlatform.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Scenes/HUD.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Musics/Overworld BGM.mp3" type="AudioStream" id=7]
+[ext_resource path="res://Scenes/Platform.tscn" type="PackedScene" id=8]
 
 [node name="Level_1" type="Node2D"]
 
@@ -522,6 +523,1226 @@ position = Vector2( -1128, 176 )
 collision_layer = 3
 collision_mask = 3
 
+[node name="Platform114" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -1112, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform115" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -1096, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform116" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -1080, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform117" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -1064, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform118" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -1048, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform119" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -1032, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform120" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -1016, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform121" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -1000, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform122" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -984, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform123" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -968, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform124" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -952, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform125" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -936, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform126" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -920, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform127" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -904, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform128" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -888, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform129" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -872, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform130" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -856, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform131" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -840, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform132" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -824, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform133" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -808, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform134" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -792, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform135" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -776, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform136" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -760, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform137" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -744, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform138" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -728, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform139" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -712, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform154" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -472, 112 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform155" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -456, 112 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform156" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -440, 112 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform157" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -424, 112 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform158" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -408, 112 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform159" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -392, 112 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform160" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -376, 112 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform161" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -360, 112 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform162" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -344, 112 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform163" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -328, 112 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform164" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -312, 112 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform165" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -296, 112 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform166" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -264, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform167" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -248, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform168" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -232, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform169" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -216, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform170" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -200, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform171" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -184, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform172" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -168, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform173" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -152, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform174" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -136, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform175" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -120, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform176" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -104, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform177" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -88, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform178" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -72, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform179" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -56, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform180" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -40, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform181" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -24, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform182" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -8, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform183" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 8, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform184" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 24, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform185" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 40, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform186" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 56, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform187" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 72, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform188" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 88, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform189" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 104, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform190" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 120, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform191" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 136, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform192" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 152, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform193" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 168, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform194" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 184, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform195" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 200, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform196" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 216, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform197" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 232, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform198" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 248, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform199" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 264, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform200" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 280, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform201" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 296, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform202" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 312, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform203" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 328, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform204" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 344, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform205" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 360, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform206" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 376, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform207" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 392, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform208" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 408, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform209" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 424, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform210" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 440, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform211" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 456, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform212" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 472, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform213" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 488, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform214" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 504, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform226" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 440, 128 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform227" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 456, 128 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform228" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 472, 128 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform229" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 488, 128 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform230" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 504, 128 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform231" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 568, 128 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform232" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 584, 128 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform233" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 600, 128 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform234" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 616, 128 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform235" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 632, 128 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform236" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 648, 128 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform237" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 504, 80 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform238" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 520, 80 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform243" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 472, 80 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform244" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 488, 80 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform239" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 536, 80 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform240" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 552, 80 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform241" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 568, 80 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform242" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 584, 80 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform215" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 520, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform216" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 536, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform217" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 552, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform218" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 568, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform219" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 584, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform220" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 600, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform221" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 616, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform222" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 632, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform223" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 648, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform224" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 664, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform225" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 680, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform245" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 696, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform246" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 712, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform247" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 728, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform248" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 744, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform249" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 760, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform250" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 776, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform251" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 792, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform252" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 808, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform253" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 824, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform254" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 840, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform255" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 856, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform256" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 872, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform257" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 888, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform258" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 904, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform259" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 920, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform260" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 840, 96 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform261" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 856, 96 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform262" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 872, 96 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform263" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 888, 96 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform264" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 904, 96 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform265" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 920, 96 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform266" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 936, 96 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform267" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 952, 96 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform268" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 968, 96 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform269" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 984, 96 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform280" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1128, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform281" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1144, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform282" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1160, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform283" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1176, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform284" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1192, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform285" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1208, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform286" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1224, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform287" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1240, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform288" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1256, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform289" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1272, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform290" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1352, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform291" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1368, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform292" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1384, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform293" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1400, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform294" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1416, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform295" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1432, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform296" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1448, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform297" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1464, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform298" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1480, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform301" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1528, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform302" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1544, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform303" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1560, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform304" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1576, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform305" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1592, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform306" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1608, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform307" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1624, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform308" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1640, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform309" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1656, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform310" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1672, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform311" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1688, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform312" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1704, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform313" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1720, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform314" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1736, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform317" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1848, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform318" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1864, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform319" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1880, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform320" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1896, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform321" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1912, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform322" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1928, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform323" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1944, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform324" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1960, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform325" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1976, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform326" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1992, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform327" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 2008, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform328" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 2024, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform329" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 2040, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform330" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 2056, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform331" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 2072, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform332" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 2088, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform333" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 2104, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform334" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 2120, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform335" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 2136, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform336" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 2152, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform337" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 2168, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform338" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 2184, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform339" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 2200, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform340" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 2216, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform341" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 2232, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform342" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 2248, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform343" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 2264, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform344" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 2280, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform345" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 2296, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform346" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 2312, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform347" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 2328, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform348" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 2344, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform349" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 2360, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform350" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 2376, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform351" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 2392, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform352" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 2408, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform353" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 2424, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform354" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 2440, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform355" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 2456, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform356" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 2472, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform357" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 2488, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform358" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 2504, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform359" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 2520, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform360" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 2536, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform361" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 2552, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform315" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1752, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform316" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1800, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform299" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1288, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform300" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1304, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform270" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 952, 144 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform271" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 968, 144 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform272" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 984, 144 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform273" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1000, 144 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform274" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1016, 144 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform275" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1032, 144 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform276" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1048, 144 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform277" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1064, 144 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform278" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1096, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform279" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( 1112, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform140" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -696, 176 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform142" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -664, 160 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform143" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -648, 160 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform144" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -632, 160 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform145" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -616, 160 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform147" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -584, 144 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform148" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -568, 144 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform149" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -552, 144 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform151" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -520, 128 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="Platform152" parent="Platforms" instance=ExtResource( 5 )]
+position = Vector2( -504, 128 )
+collision_layer = 3
+collision_mask = 3
+
 [node name="Platform25" parent="Platforms" instance=ExtResource( 5 )]
 position = Vector2( -2248, 128 )
 collision_layer = 3
@@ -601,6 +1822,129 @@ collision_mask = 3
 position = Vector2( -2008, 128 )
 collision_layer = 3
 collision_mask = 3
+
+[node name="OneWayPlatform" parent="Platforms" instance=ExtResource( 8 )]
+position = Vector2( -680, 160 )
+
+[node name="OneWayPlatform2" parent="Platforms" instance=ExtResource( 8 )]
+position = Vector2( -600, 144 )
+
+[node name="OneWayPlatform3" parent="Platforms" instance=ExtResource( 8 )]
+position = Vector2( -536, 128 )
+
+[node name="OneWayPlatform4" parent="Platforms" instance=ExtResource( 8 )]
+position = Vector2( -488, 112 )
+
+[node name="OneWayPlatform5" parent="Platforms" instance=ExtResource( 8 )]
+position = Vector2( -280, 112 )
+
+[node name="OneWayPlatform6" parent="Platforms" instance=ExtResource( 8 )]
+position = Vector2( -280, 128 )
+
+[node name="OneWayPlatform7" parent="Platforms" instance=ExtResource( 8 )]
+position = Vector2( -280, 144 )
+
+[node name="OneWayPlatform8" parent="Platforms" instance=ExtResource( 8 )]
+position = Vector2( -280, 160 )
+
+[node name="OneWayPlatform10" parent="Platforms" instance=ExtResource( 8 )]
+position = Vector2( 152, 128 )
+
+[node name="OneWayPlatform11" parent="Platforms" instance=ExtResource( 8 )]
+position = Vector2( 152, 144 )
+
+[node name="OneWayPlatform12" parent="Platforms" instance=ExtResource( 8 )]
+position = Vector2( 152, 160 )
+
+[node name="OneWayPlatform13" parent="Platforms" instance=ExtResource( 8 )]
+position = Vector2( 200, 128 )
+
+[node name="OneWayPlatform16" parent="Platforms" instance=ExtResource( 8 )]
+position = Vector2( 200, 112 )
+
+[node name="OneWayPlatform17" parent="Platforms" instance=ExtResource( 8 )]
+position = Vector2( 184, 112 )
+
+[node name="OneWayPlatform18" parent="Platforms" instance=ExtResource( 8 )]
+position = Vector2( 168, 128 )
+
+[node name="OneWayPlatform14" parent="Platforms" instance=ExtResource( 8 )]
+position = Vector2( 200, 144 )
+
+[node name="OneWayPlatform19" parent="Platforms" instance=ExtResource( 8 )]
+position = Vector2( 936, 144 )
+
+[node name="OneWayPlatform20" parent="Platforms" instance=ExtResource( 8 )]
+position = Vector2( 936, 160 )
+
+[node name="OneWayPlatform21" parent="Platforms" instance=ExtResource( 8 )]
+position = Vector2( 1080, 144 )
+
+[node name="OneWayPlatform22" parent="Platforms" instance=ExtResource( 8 )]
+position = Vector2( 1080, 160 )
+
+[node name="OneWayPlatform23" parent="Platforms" instance=ExtResource( 8 )]
+position = Vector2( 1320, 144 )
+
+[node name="OneWayPlatform24" parent="Platforms" instance=ExtResource( 8 )]
+position = Vector2( 1320, 160 )
+
+[node name="OneWayPlatform25" parent="Platforms" instance=ExtResource( 8 )]
+position = Vector2( 1336, 144 )
+
+[node name="OneWayPlatform26" parent="Platforms" instance=ExtResource( 8 )]
+position = Vector2( 1336, 160 )
+
+[node name="OneWayPlatform33" parent="Platforms" instance=ExtResource( 8 )]
+position = Vector2( 1768, 144 )
+
+[node name="OneWayPlatform34" parent="Platforms" instance=ExtResource( 8 )]
+position = Vector2( 1768, 160 )
+
+[node name="OneWayPlatform35" parent="Platforms" instance=ExtResource( 8 )]
+position = Vector2( 1784, 144 )
+
+[node name="OneWayPlatform36" parent="Platforms" instance=ExtResource( 8 )]
+position = Vector2( 1784, 160 )
+
+[node name="OneWayPlatform27" parent="Platforms" instance=ExtResource( 8 )]
+position = Vector2( 1496, 144 )
+
+[node name="OneWayPlatform28" parent="Platforms" instance=ExtResource( 8 )]
+position = Vector2( 1496, 160 )
+
+[node name="OneWayPlatform29" parent="Platforms" instance=ExtResource( 8 )]
+position = Vector2( 1512, 144 )
+
+[node name="OneWayPlatform31" parent="Platforms" instance=ExtResource( 8 )]
+position = Vector2( 1496, 128 )
+
+[node name="OneWayPlatform32" parent="Platforms" instance=ExtResource( 8 )]
+position = Vector2( 1512, 128 )
+
+[node name="OneWayPlatform30" parent="Platforms" instance=ExtResource( 8 )]
+position = Vector2( 1512, 160 )
+
+[node name="OneWayPlatform37" parent="Platforms" instance=ExtResource( 8 )]
+position = Vector2( 1816, 144 )
+
+[node name="OneWayPlatform38" parent="Platforms" instance=ExtResource( 8 )]
+position = Vector2( 1816, 160 )
+
+[node name="OneWayPlatform39" parent="Platforms" instance=ExtResource( 8 )]
+position = Vector2( 1832, 144 )
+
+[node name="OneWayPlatform40" parent="Platforms" instance=ExtResource( 8 )]
+position = Vector2( 1816, 128 )
+
+[node name="OneWayPlatform41" parent="Platforms" instance=ExtResource( 8 )]
+position = Vector2( 1832, 128 )
+
+[node name="OneWayPlatform42" parent="Platforms" instance=ExtResource( 8 )]
+position = Vector2( 1832, 160 )
+
+[node name="OneWayPlatform15" parent="Platforms" instance=ExtResource( 8 )]
+position = Vector2( 200, 160 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

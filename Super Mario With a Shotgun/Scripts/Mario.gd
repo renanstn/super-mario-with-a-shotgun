@@ -17,6 +17,7 @@ onready var reload_timer = $ReloadingTimer
 
 export var gun_eject_path: NodePath
 export var speed: int = 150
+
 var motion: Vector2 = Vector2()
 var gun_ejector: Node
 var looking_to_right: bool = false
@@ -24,6 +25,7 @@ var reloading: bool = false
 var bullets : int = 1
 
 signal player_flipped(direction)
+
 
 func _ready():
 	gun_ejector = get_node(gun_eject_path)

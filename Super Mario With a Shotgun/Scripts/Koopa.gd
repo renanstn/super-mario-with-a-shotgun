@@ -3,6 +3,7 @@ extends KinematicBody2D
 
 const UP: Vector2 = Vector2(0, -1)
 const GRAVITY: int = 15
+
 enum STATES {
 	IDLE,
 	WALKING,

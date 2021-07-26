@@ -218,7 +218,7 @@ shape = SubResource( 1 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
-zoom = Vector2( 0.4, 0.4 )
+zoom = Vector2( 0.5, 0.5 )
 limit_bottom = 210
 
 [node name="ShotgunArea" type="Area2D" parent="."]

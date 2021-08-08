@@ -1,4 +1,7 @@
-[gd_scene format=2]
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Sprites/HUD/box.png" type="Texture" id=1]
+[ext_resource path="res://Sprites/HUD/shotgun.png" type="Texture" id=2]
 
 [node name="HUD" type="Control"]
 anchor_right = 1.0
@@ -7,18 +10,25 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 20.0
+[node name="ItemBox" type="TextureRect" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -32.0
 margin_top = 20.0
-margin_right = -20.0
-margin_bottom = -20.0
+margin_right = 32.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 64, 64 )
+texture = ExtResource( 1 )
+expand = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
-margin_right = 984.0
-margin_bottom = 560.0
-alignment = 1
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -16.578
+margin_top = 45.0
+margin_right = 23.4216
+margin_bottom = 58.0
+texture = ExtResource( 2 )

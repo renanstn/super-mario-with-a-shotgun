@@ -194,6 +194,7 @@ tracks/0/keys = {
 }
 
 [node name="Mario" type="KinematicBody2D"]
+scale = Vector2( -1, 1 )
 script = ExtResource( 2 )
 gun_eject_path = NodePath("GunEjector")
 

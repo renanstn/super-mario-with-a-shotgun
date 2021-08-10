@@ -20,7 +20,7 @@ export var speed: int = 150
 
 var motion: Vector2 = Vector2()
 var gun_ejector: Node
-var looking_to_right: bool = false
+var looking_to_right: bool = true
 var reloading: bool = false
 var bullets : int = 1
 

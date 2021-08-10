@@ -110,4 +110,9 @@ anims/Walking = SubResource( 3 )
 [node name="BloodEffect" parent="." instance=ExtResource( 3 )]
 position = Vector2( -3.08677, 0.982151 )
 
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2( -8, 0 )
+enabled = true
+cast_to = Vector2( 0, 20 )
+
 [connection signal="blood_over" from="BloodEffect" to="." method="_on_BloodEffect_blood_over"]

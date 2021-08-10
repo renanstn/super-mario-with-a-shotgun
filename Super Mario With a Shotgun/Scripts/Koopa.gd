@@ -13,6 +13,7 @@ enum STATES {
 onready var animator = $AnimationPlayer
 onready var sprite = $Sprite
 onready var collision = $CollisionShape2D
+onready var ground_checker = $RayCast2D
 
 export var player_path : NodePath
 export var blood_emitter_path : NodePath
@@ -35,12 +36,23 @@ func _ready():
 func _physics_process(_delta):
 	motion.y += GRAVITY
 	if state != STATES.DYING and player:
-		set_motion()
+		# follow_player()
+		walk()
 	motion = move_and_slide(motion, UP)
 	animate()
 
 
-func set_motion():
+func walk():
+	if not ground_checker.is_colliding():
+		looking_to_right = !looking_to_right
+		scale.x = -1
+	if looking_to_right:
+		motion.x = speed
+	else:
+		motion.x = -speed
+
+
+func follow_player():
 	var distance_from_player = player.position.x - self.position.x
 	if abs(distance_from_player) < min_distance_from_player:
 		state = STATES.WALKING

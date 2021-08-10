@@ -14,6 +14,7 @@ onready var animator = $AnimationPlayer
 onready var sprite = $Sprite
 onready var collision = $CollisionShape2D
 onready var ground_checker = $RayCast2D
+onready var death_timer = $DeathTimer
 
 export var player_path : NodePath
 export var blood_emitter_path : NodePath
@@ -53,6 +54,9 @@ func walk():
 
 
 func follow_player():
+	"""
+	This function is not being used
+	"""
 	var distance_from_player = player.position.x - self.position.x
 	if abs(distance_from_player) < min_distance_from_player:
 		state = STATES.WALKING
@@ -80,26 +84,26 @@ func animate():
 
 func die():
 	state = STATES.DYING
+	death_timer.start()
 	if blood_emitter:
 		sprite.visible = false
 		collision.disabled = true
 		blood_emitter.emit()
+	if dead_koopa:
 		throw_body()
-	else:
-		queue_free()
 
 
 func throw_body():
 	var dead_body = dead_koopa.instance()
-	var is_looking_to_right = 1 if looking_to_right else -1
+	var throw_direction = -1 if player.position.x < self.position.x else 1
 	dead_body.global_position = self.global_position
-	dead_body.rotation = self.global_rotation * is_looking_to_right
-	dead_body.apply_impulse(Vector2(0,0), Vector2(-200 * is_looking_to_right, -50))
-	dead_body.add_torque(-500 * is_looking_to_right)
+	dead_body.rotation = self.global_rotation * throw_direction
+	dead_body.apply_impulse(Vector2(0,0), Vector2(-200 * throw_direction, -50))
+	dead_body.add_torque(-500 * throw_direction)
 	player.get_parent().add_child(dead_body)
 	if looking_to_right:
 		dead_body.flip_sprite()
 
 
-func _on_BloodEffect_blood_over():
+func _on_DeathTimer_timeout():
 	queue_free()

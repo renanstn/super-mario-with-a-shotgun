@@ -115,4 +115,8 @@ position = Vector2( -8, 0 )
 enabled = true
 cast_to = Vector2( 0, 20 )
 
-[connection signal="blood_over" from="BloodEffect" to="." method="_on_BloodEffect_blood_over"]
+[node name="DeathTimer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+
+[connection signal="timeout" from="DeathTimer" to="." method="_on_DeathTimer_timeout"]

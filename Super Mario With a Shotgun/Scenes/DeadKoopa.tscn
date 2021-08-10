@@ -4,21 +4,21 @@
 [ext_resource path="res://Scripts/DeadKoopa.gd" type="Script" id=2]
 [ext_resource path="res://Scenes/DeadBloodEffect.tscn" type="PackedScene" id=3]
 
-[sub_resource type="PhysicsMaterial" id=2]
+[sub_resource type="PhysicsMaterial" id=1]
 bounce = 0.5
 
-[sub_resource type="RectangleShape2D" id=1]
+[sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 8, 16 )
 
 [node name="DeadKoopa" type="RigidBody2D"]
 collision_layer = 2
 collision_mask = 2
 mass = 10.0
-physics_material_override = SubResource( 2 )
+physics_material_override = SubResource( 1 )
 script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource( 1 )
+shape = SubResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )

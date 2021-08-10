@@ -2,10 +2,13 @@ extends RigidBody2D
 
 
 onready var sprite = $Sprite
+onready var life_timer = $LifeTimer
+onready var blood = $BloodEffect
 
 
 func _ready():
-	$LifeTimer.start()
+	life_timer.start()
+	# blood.emit()
 
 
 func _on_LifeTimer_timeout():

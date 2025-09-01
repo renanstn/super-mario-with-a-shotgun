@@ -1,0 +1,40 @@
+[gd_scene load_steps=8 format=3 uid="uid://cko2jle1lr0rj"]
+
+[ext_resource type="Script" uid="uid://bhuqou0uns2hj" path="res://scripts/mario.gd" id="1_bvgp0"]
+[ext_resource type="Texture2D" uid="uid://c40sun0c8dbj2" path="res://sprites/mario_walking3.png" id="1_keuod"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bvgp0"]
+size = Vector2(15, 28)
+
+[sub_resource type="Animation" id="Animation_bvgp0"]
+resource_name = "idle"
+
+[sub_resource type="Animation" id="Animation_5gbmu"]
+resource_name = "walking"
+
+[sub_resource type="Animation" id="Animation_wnd63"]
+resource_name = "jumping"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_rgcl4"]
+_data = {
+&"idle": SubResource("Animation_bvgp0"),
+&"jumping": SubResource("Animation_wnd63"),
+&"walking": SubResource("Animation_5gbmu")
+}
+
+[node name="Mario" type="CharacterBody2D"]
+script = ExtResource("1_bvgp0")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_keuod")
+offset = Vector2(0, 0.5)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 1)
+shape = SubResource("RectangleShape2D_bvgp0")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_rgcl4")
+}

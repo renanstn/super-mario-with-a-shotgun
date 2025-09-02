@@ -5,11 +5,16 @@
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_47enk"]
 texture = ExtResource("1_tjuek")
 0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
 [sub_resource type="TileSet" id="TileSet_jx7lj"]
+physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_47enk")
 
 [node name="TileMap" type="TileMapLayer"]
+texture_filter = 1
 tile_set = SubResource("TileSet_jx7lj")

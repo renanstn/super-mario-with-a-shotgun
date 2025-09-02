@@ -68,35 +68,6 @@ tracks/0/keys = {
 "values": [ExtResource("4_cjj4f")]
 }
 
-[sub_resource type="Animation" id="Animation_5gbmu"]
-resource_name = "walking"
-length = 0.6
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.4),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 1,
-"values": [ExtResource("5_8ska5"), ExtResource("2_rgcl4"), ExtResource("1_keuod")]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Sprite2D:offset")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0, -0.4)]
-}
-
 [sub_resource type="Animation" id="Animation_8ska5"]
 resource_name = "look_up"
 tracks/0/type = "value"
@@ -124,6 +95,35 @@ tracks/1/keys = {
 "values": [Vector2(0, -1.4)]
 }
 
+[sub_resource type="Animation" id="Animation_5gbmu"]
+resource_name = "walking"
+length = 0.3
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [ExtResource("5_8ska5"), ExtResource("2_rgcl4"), ExtResource("1_keuod")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, -0.4)]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_rgcl4"]
 _data = {
 &"RESET": SubResource("Animation_5l4gq"),
@@ -149,3 +149,7 @@ shape = SubResource("RectangleShape2D_bvgp0")
 libraries = {
 &"": SubResource("AnimationLibrary_rgcl4")
 }
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)
+limit_bottom = 420

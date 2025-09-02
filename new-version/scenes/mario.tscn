@@ -1,24 +1,135 @@
-[gd_scene load_steps=8 format=3 uid="uid://cko2jle1lr0rj"]
+[gd_scene load_steps=14 format=3 uid="uid://cko2jle1lr0rj"]
 
 [ext_resource type="Script" uid="uid://bhuqou0uns2hj" path="res://scripts/mario.gd" id="1_bvgp0"]
 [ext_resource type="Texture2D" uid="uid://c40sun0c8dbj2" path="res://sprites/mario_walking3.png" id="1_keuod"]
+[ext_resource type="Texture2D" uid="uid://d2la6sr5s4orf" path="res://sprites/mario_walking2.png" id="2_rgcl4"]
+[ext_resource type="Texture2D" uid="uid://clcbwn5vf0fkl" path="res://sprites/mario_jumping.png" id="4_cjj4f"]
+[ext_resource type="Texture2D" uid="uid://bpaskswscp1tm" path="res://sprites/mario_walking1.png" id="5_8ska5"]
+[ext_resource type="Texture2D" uid="uid://fob5wedyyyad" path="res://sprites/mario_look_up.png" id="6_cjj4f"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bvgp0"]
-size = Vector2(15, 28)
+size = Vector2(15, 27)
+
+[sub_resource type="Animation" id="Animation_5l4gq"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_rgcl4")]
+}
 
 [sub_resource type="Animation" id="Animation_bvgp0"]
 resource_name = "idle"
-
-[sub_resource type="Animation" id="Animation_5gbmu"]
-resource_name = "walking"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_keuod")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, -0.4)]
+}
 
 [sub_resource type="Animation" id="Animation_wnd63"]
 resource_name = "jumping"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("4_cjj4f")]
+}
+
+[sub_resource type="Animation" id="Animation_5gbmu"]
+resource_name = "walking"
+length = 0.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [ExtResource("5_8ska5"), ExtResource("2_rgcl4"), ExtResource("1_keuod")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, -0.4)]
+}
+
+[sub_resource type="Animation" id="Animation_8ska5"]
+resource_name = "look_up"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("6_cjj4f")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, -1.4)]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_rgcl4"]
 _data = {
+&"RESET": SubResource("Animation_5l4gq"),
 &"idle": SubResource("Animation_bvgp0"),
 &"jumping": SubResource("Animation_wnd63"),
+&"look_up": SubResource("Animation_8ska5"),
 &"walking": SubResource("Animation_5gbmu")
 }
 
@@ -27,11 +138,11 @@ script = ExtResource("1_bvgp0")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
-texture = ExtResource("1_keuod")
-offset = Vector2(0, 0.5)
+texture = ExtResource("2_rgcl4")
+offset = Vector2(0, -0.4)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0.5, 1)
+position = Vector2(0.5, 0.5)
 shape = SubResource("RectangleShape2D_bvgp0")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

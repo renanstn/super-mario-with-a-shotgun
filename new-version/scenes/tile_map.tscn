@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://c328wtqgjr0oq"]
+
+[ext_resource type="Texture2D" uid="uid://chbklhb46uxp4" path="res://sprites/ground.png" id="1_tjuek"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_47enk"]
+texture = ExtResource("1_tjuek")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_jx7lj"]
+sources/0 = SubResource("TileSetAtlasSource_47enk")
+
+[node name="TileMap" type="TileMapLayer"]
+tile_set = SubResource("TileSet_jx7lj")

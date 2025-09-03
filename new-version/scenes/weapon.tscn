@@ -6,8 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://bf3thxm832ylt" path="res://sprites/hand_shotgun2.png" id="3_xrduv"]
 [ext_resource type="Texture2D" uid="uid://d2j6rtxb8lp7o" path="res://sprites/hand_shotgun3.png" id="4_5csnh"]
 
-[sub_resource type="Animation" id="Animation_naoe1"]
-resource_name = "shotgun_steady"
+[sub_resource type="Animation" id="Animation_5csnh"]
+resource_name = "shotgun_jumping"
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -19,7 +19,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("2_cjr6y")]
+"values": [ExtResource("2_xrduv")]
 }
 
 [sub_resource type="Animation" id="Animation_234bu"]
@@ -38,8 +38,8 @@ tracks/0/keys = {
 "values": [ExtResource("2_cjr6y"), ExtResource("3_xrduv"), ExtResource("4_5csnh"), ExtResource("3_xrduv"), ExtResource("2_cjr6y")]
 }
 
-[sub_resource type="Animation" id="Animation_5csnh"]
-resource_name = "shotgun_jumping"
+[sub_resource type="Animation" id="Animation_naoe1"]
+resource_name = "shotgun_steady"
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -51,7 +51,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("2_xrduv")]
+"values": [ExtResource("2_cjr6y")]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_b2wdv"]

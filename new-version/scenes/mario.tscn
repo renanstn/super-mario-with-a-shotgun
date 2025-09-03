@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://cko2jle1lr0rj"]
+[gd_scene load_steps=17 format=3 uid="uid://cko2jle1lr0rj"]
 
 [ext_resource type="Script" uid="uid://bhuqou0uns2hj" path="res://scripts/mario.gd" id="1_bvgp0"]
 [ext_resource type="Texture2D" uid="uid://c40sun0c8dbj2" path="res://sprites/mario_walking3.png" id="1_keuod"]
@@ -6,6 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://clcbwn5vf0fkl" path="res://sprites/mario_jumping.png" id="4_cjj4f"]
 [ext_resource type="Texture2D" uid="uid://bpaskswscp1tm" path="res://sprites/mario_walking1.png" id="5_8ska5"]
 [ext_resource type="Texture2D" uid="uid://fob5wedyyyad" path="res://sprites/mario_look_up.png" id="6_cjj4f"]
+[ext_resource type="Texture2D" uid="uid://3ax3e05qrfki" path="res://sprites/mario_falling.png" id="7_8ska5"]
+[ext_resource type="PackedScene" uid="uid://bxmhu1nicgrnq" path="res://scenes/weapon.tscn" id="8_5l4gq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bvgp0"]
 size = Vector2(15, 27)
@@ -124,17 +126,35 @@ tracks/1/keys = {
 "values": [Vector2(0, -0.4)]
 }
 
+[sub_resource type="Animation" id="Animation_cjj4f"]
+resource_name = "falling"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("7_8ska5")]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_rgcl4"]
 _data = {
 &"RESET": SubResource("Animation_5l4gq"),
+&"falling": SubResource("Animation_cjj4f"),
 &"idle": SubResource("Animation_bvgp0"),
 &"jumping": SubResource("Animation_wnd63"),
 &"look_up": SubResource("Animation_8ska5"),
 &"walking": SubResource("Animation_5gbmu")
 }
 
-[node name="Mario" type="CharacterBody2D"]
+[node name="Mario" type="CharacterBody2D" node_paths=PackedStringArray("weapon")]
 script = ExtResource("1_bvgp0")
+weapon = NodePath("Weapon")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
@@ -142,6 +162,7 @@ texture = ExtResource("2_rgcl4")
 offset = Vector2(0, -0.4)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2(0.5, 0.5)
 shape = SubResource("RectangleShape2D_bvgp0")
 
@@ -153,3 +174,6 @@ libraries = {
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(2, 2)
 limit_bottom = 420
+
+[node name="Weapon" parent="." node_paths=PackedStringArray("parent_node") instance=ExtResource("8_5l4gq")]
+parent_node = NodePath("..")

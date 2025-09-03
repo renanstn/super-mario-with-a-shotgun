@@ -1,11 +1,12 @@
 extends CharacterBody2D
 
-
 const SPEED = 200.0
 const JUMP_VELOCITY = -400.0
 
+@export var weapon: Node2D
 var looking_up := false
 var sprite_flipped := true
+var is_jumping := false
 
 
 func _physics_process(delta: float) -> void:
@@ -36,12 +37,17 @@ func _physics_process(delta: float) -> void:
 
 func _animate():
 	$Sprite2D.flip_h = sprite_flipped
-	if velocity.x != 0:
-		$AnimationPlayer.play("walking")
-	elif velocity.x == 0:
-		$AnimationPlayer.play("idle")
-	# TODO: Different animations: going up and down
-	if velocity.y != 0:
-		$AnimationPlayer.play("jumping")
-	if looking_up:
-		$AnimationPlayer.play("look_up")
+	if is_on_floor():
+		is_jumping = false
+		if velocity.x != 0:
+			$AnimationPlayer.play("walking")
+		elif velocity.x == 0:
+			$AnimationPlayer.play("idle")
+		if looking_up:
+			$AnimationPlayer.play("look_up")
+	else:
+		is_jumping = true
+		if velocity.y < 0:
+			$AnimationPlayer.play("jumping")
+		elif velocity.y > 0:
+			$AnimationPlayer.play("falling")

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b7y3nouo5iwvl"
-path="res://.godot/imported/hand_shotgun4.png-c49b73304b35140491f1de02960b7435.ctex"
+uid="uid://3ax3e05qrfki"
+path="res://.godot/imported/mario_falling.png-6d72a4cd48b77758631cd38bf7d62a1c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/hand_shotgun4.png"
-dest_files=["res://.godot/imported/hand_shotgun4.png-c49b73304b35140491f1de02960b7435.ctex"]
+source_file="res://sprites/mario_falling.png"
+dest_files=["res://.godot/imported/mario_falling.png-6d72a4cd48b77758631cd38bf7d62a1c.ctex"]
 
 [params]
 

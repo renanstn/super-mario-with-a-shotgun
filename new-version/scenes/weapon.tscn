@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://bxmhu1nicgrnq"]
+[gd_scene load_steps=11 format=3 uid="uid://bxmhu1nicgrnq"]
 
 [ext_resource type="Script" uid="uid://b6rttk26e22m2" path="res://scripts/weapon.gd" id="1_8fp1k"]
 [ext_resource type="Texture2D" uid="uid://ctyo5bc3esfs4" path="res://sprites/hand_shotgun1.png" id="2_cjr6y"]
@@ -61,15 +61,24 @@ _data = {
 &"shotgun_steady": SubResource("Animation_naoe1")
 }
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cjr6y"]
+size = Vector2(37, 20)
+
 [node name="Weapon" type="Node2D"]
 script = ExtResource("1_8fp1k")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(-3, 0)
-texture = ExtResource("2_xrduv")
+texture = ExtResource("2_cjr6y")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
 &"": SubResource("AnimationLibrary_b2wdv")
 }
+
+[node name="ShotgunArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ShotgunArea"]
+position = Vector2(-38.5, -4)
+shape = SubResource("RectangleShape2D_cjr6y")

@@ -10,7 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://bxmhu1nicgrnq" path="res://scenes/weapon.tscn" id="8_5l4gq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bvgp0"]
-size = Vector2(15, 27)
+size = Vector2(13, 27)
 
 [sub_resource type="Animation" id="Animation_5l4gq"]
 length = 0.001
@@ -176,4 +176,6 @@ zoom = Vector2(2, 2)
 limit_bottom = 420
 
 [node name="Weapon" parent="." node_paths=PackedStringArray("parent_node") instance=ExtResource("8_5l4gq")]
+position = Vector2(0, 2)
 parent_node = NodePath("..")
+shotgun_offset = Vector2(0, 2)

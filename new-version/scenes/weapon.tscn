@@ -78,6 +78,7 @@ libraries = {
 }
 
 [node name="ShotgunArea" type="Area2D" parent="."]
+collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ShotgunArea"]
 position = Vector2(-38.5, -4)

@@ -30,6 +30,8 @@ func get_hit():
 	if not alive:
 		return
 	alive = false
+	self.set_collision_mask_value(1, false)
+	$BloodSplatter.emit()
 	$AnimationPlayer.play("dying")
 	target_rotation = 90
 	velocity.x = -direction * DEATH_KNOCKBACK

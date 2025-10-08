@@ -153,6 +153,7 @@ _data = {
 }
 
 [node name="Mario" type="CharacterBody2D" node_paths=PackedStringArray("weapon")]
+collision_mask = 2
 script = ExtResource("1_bvgp0")
 weapon = NodePath("Weapon")
 

@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=4 uid="uid://tw8acql7qlg2"]
+[gd_scene load_steps=6 format=4 uid="uid://tw8acql7qlg2"]
 
 [ext_resource type="PackedScene" uid="uid://c328wtqgjr0oq" path="res://scenes/tile_map.tscn" id="1_yldxj"]
 [ext_resource type="PackedScene" uid="uid://cko2jle1lr0rj" path="res://scenes/mario.tscn" id="2_f0p7x"]
 [ext_resource type="Texture2D" uid="uid://3xf3yxaty2vk" path="res://backgrounds/green.png" id="3_vtm10"]
 [ext_resource type="PackedScene" uid="uid://bf3sdyg5a7ey0" path="res://scenes/koopa.tscn" id="4_a0f05"]
+[ext_resource type="AudioStream" uid="uid://cisxtd22t3mgy" path="res://musics/Overworld BGM.mp3" id="5_xnrqy"]
 
 [node name="TestArea" type="Node2D"]
 
@@ -18,10 +19,20 @@ centered = false
 
 [node name="TileMap" parent="." instance=ExtResource("1_yldxj")]
 z_index = 1
-tile_map_data = PackedByteArray("AAAAABkAAAAAAAAAAAAZABkAAAACAAAAAAAYABkAAAABAAAAAAAXABkAAAABAAAAAAAWABkAAAABAAAAAAAVABkAAAABAAAAAAAUABkAAAABAAAAAAATABkAAAABAAAAAAASABkAAAABAAAAAAARABkAAAABAAAAAAAQABkAAAABAAAAAAAPABkAAAABAAAAAAAOABkAAAABAAAAAAANABkAAAABAAAAAAAMABkAAAABAAAAAAALABkAAAABAAAAAAAKABkAAAABAAAAAAAJABkAAAABAAAAAAAIABkAAAABAAAAAAAHABkAAAABAAAAAAAGABkAAAABAAAAAAAFABkAAAABAAAAAAAEABkAAAABAAAAAAADABkAAAABAAAAAAACABkAAAABAAAAAAABABkAAAABAAAAAAA=")
+tile_map_data = PackedByteArray("AAAAABkAAAAAAAAAAAAZABkAAAACAAAAAAAYABkAAAABAAAAAAAXABkAAAABAAAAAAAWABkAAAABAAAAAAAVABkAAAABAAAAAAAUABkAAAABAAAAAAATABkAAAABAAAAAAASABkAAAABAAAAAAARABkAAAABAAAAAAAQABkAAAABAAAAAAAPABkAAAABAAAAAAAOABkAAAABAAAAAAANABkAAAABAAAAAAAMABkAAAABAAAAAAALABkAAAABAAAAAAAKABkAAAABAAAAAAAJABkAAAABAAAAAAAIABkAAAABAAAAAAAHABkAAAABAAAAAAAGABkAAAABAAAAAAAFABkAAAABAAAAAAAEABkAAAABAAAAAAADABkAAAABAAAAAAACABkAAAABAAAAAAABABkAAAABAAAAAAAAABoAAAABAAAAADABABoAAAABAAAAADACABoAAAABAAAAADADABoAAAABAAAAADAEABoAAAABAAAAADAFABoAAAABAAAAADAGABoAAAABAAAAADAHABoAAAABAAAAADAIABoAAAABAAAAADAJABoAAAABAAAAADAKABoAAAABAAAAADALABoAAAABAAAAADAMABoAAAABAAAAADANABoAAAABAAAAADAOABoAAAABAAAAADAPABoAAAABAAAAADAQABoAAAABAAAAADARABoAAAABAAAAADASABoAAAABAAAAADATABoAAAABAAAAADAUABoAAAABAAAAADAVABoAAAABAAAAADAWABoAAAABAAAAADAXABoAAAABAAAAADAYABoAAAABAAAAADAZABoAAAABAAAAADA=")
 
 [node name="Koopa" parent="." instance=ExtResource("4_a0f05")]
-position = Vector2(180, 384)
+position = Vector2(290, 384)
+
+[node name="Koopa2" parent="." instance=ExtResource("4_a0f05")]
+position = Vector2(349, 384)
+
+[node name="Koopa3" parent="." instance=ExtResource("4_a0f05")]
+position = Vector2(403, 384)
 
 [node name="Mario" parent="." instance=ExtResource("2_f0p7x")]
 position = Vector2(45, 378)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_xnrqy")
+autoplay = true

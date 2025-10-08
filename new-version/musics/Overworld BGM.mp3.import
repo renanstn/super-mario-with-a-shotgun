@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cisxtd22t3mgy"
+path="res://.godot/imported/Overworld BGM.mp3-9fd4add7e7fe6b1dabe15c081e42a579.mp3str"
+
+[deps]
+
+source_file="res://musics/Overworld BGM.mp3"
+dest_files=["res://.godot/imported/Overworld BGM.mp3-9fd4add7e7fe6b1dabe15c081e42a579.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

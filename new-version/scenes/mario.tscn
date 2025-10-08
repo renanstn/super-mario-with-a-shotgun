@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://cko2jle1lr0rj"]
+[gd_scene load_steps=19 format=3 uid="uid://cko2jle1lr0rj"]
 
 [ext_resource type="Script" uid="uid://bhuqou0uns2hj" path="res://scripts/mario.gd" id="1_bvgp0"]
 [ext_resource type="Texture2D" uid="uid://c40sun0c8dbj2" path="res://sprites/mario_walking3.png" id="1_keuod"]
@@ -8,6 +8,8 @@
 [ext_resource type="Texture2D" uid="uid://fob5wedyyyad" path="res://sprites/mario_look_up.png" id="6_cjj4f"]
 [ext_resource type="Texture2D" uid="uid://3ax3e05qrfki" path="res://sprites/mario_falling.png" id="7_8ska5"]
 [ext_resource type="PackedScene" uid="uid://bxmhu1nicgrnq" path="res://scenes/weapon.tscn" id="8_5l4gq"]
+[ext_resource type="AudioStream" uid="uid://cygqhq0ofq71x" path="res://sounds/jump.wav" id="9_t0xp7"]
+[ext_resource type="AudioStream" uid="uid://cyv1gt6das85" path="res://sounds/yahoo.wav" id="10_q20sn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bvgp0"]
 size = Vector2(13, 27)
@@ -180,3 +182,9 @@ limit_bottom = 420
 position = Vector2(0, 2)
 parent_node = NodePath("..")
 shotgun_offset = Vector2(0, 2)
+
+[node name="JumpSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("9_t0xp7")
+
+[node name="YahooSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("10_q20sn")

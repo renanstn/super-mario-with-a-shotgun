@@ -1,10 +1,12 @@
-[gd_scene load_steps=11 format=3 uid="uid://bxmhu1nicgrnq"]
+[gd_scene load_steps=15 format=3 uid="uid://bxmhu1nicgrnq"]
 
 [ext_resource type="Script" uid="uid://b6rttk26e22m2" path="res://scripts/weapon.gd" id="1_8fp1k"]
 [ext_resource type="Texture2D" uid="uid://ctyo5bc3esfs4" path="res://sprites/hand_shotgun1.png" id="2_cjr6y"]
 [ext_resource type="Texture2D" uid="uid://b7y3nouo5iwvl" path="res://sprites/hand_shotgun4.png" id="2_xrduv"]
 [ext_resource type="Texture2D" uid="uid://bf3thxm832ylt" path="res://sprites/hand_shotgun2.png" id="3_xrduv"]
 [ext_resource type="Texture2D" uid="uid://d2j6rtxb8lp7o" path="res://sprites/hand_shotgun3.png" id="4_5csnh"]
+[ext_resource type="AudioStream" uid="uid://dpdnn3pr8cd05" path="res://sounds/bullet.wav" id="6_xrduv"]
+[ext_resource type="Texture2D" uid="uid://bcixuqhvmia8u" path="res://sprites/shoot.png" id="7_5csnh"]
 
 [sub_resource type="Animation" id="Animation_5csnh"]
 resource_name = "shotgun_jumping"
@@ -12,7 +14,7 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/path = NodePath("WeaponSprite:texture")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -28,7 +30,7 @@ length = 0.4
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/path = NodePath("WeaponSprite:texture")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -44,7 +46,7 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/path = NodePath("WeaponSprite:texture")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -64,13 +66,46 @@ _data = {
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cjr6y"]
 size = Vector2(37, 20)
 
+[sub_resource type="Animation" id="Animation_ihae7"]
+resource_name = "shoot"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("FireSprite:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("FireSprite:region_rect")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [Rect2(0, 0, 27, 19), Rect2(27, 0, 27, 19)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8aap5"]
+_data = {
+&"shoot": SubResource("Animation_ihae7")
+}
+
 [node name="Weapon" type="Node2D"]
 script = ExtResource("1_8fp1k")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="WeaponSprite" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(-3, 0)
-texture = ExtResource("2_cjr6y")
+texture = ExtResource("2_xrduv")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -83,3 +118,20 @@ collision_mask = 4
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ShotgunArea"]
 position = Vector2(-38.5, -4)
 shape = SubResource("RectangleShape2D_cjr6y")
+
+[node name="ShootSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_xrduv")
+
+[node name="FireSprite" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 1
+position = Vector2(-33, -4)
+texture = ExtResource("7_5csnh")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(0, 0, 27, 19)
+
+[node name="ShootAnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_8aap5")
+}
